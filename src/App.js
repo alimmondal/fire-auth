@@ -142,7 +142,6 @@ function App() {
   }
 
 
-
   //update user info
   const updateUserName = (name) => {
     const user = firebase.auth().currentUser;
@@ -174,11 +173,12 @@ function App() {
         </div>
       }
 
+      
+
+      <h1>Our own authentication</h1>
       <p>Name: {user.name}</p>
       <p>Email: {user.email} </p>
       <p>Password: {user.password}</p>
-
-      <h1>Our own authentication</h1>
 
       <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />
       <label htmlFor="newUser">New User Sign Up</label>
